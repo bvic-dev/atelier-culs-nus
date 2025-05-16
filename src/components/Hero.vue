@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
 import Button from './ui/Button.vue';
 
 defineProps<{
@@ -7,11 +6,11 @@ defineProps<{
 }>();
 
 // This will be replaced with actual images later
-const images = [
+/*const images = [
   { id: 1, src: '/placeholder.jpg', caption: 'HÉLOISE, LIEU UNIQUE' },
   { id: 2, src: '/placeholder.jpg', caption: 'EMMA, STUDIO' },
   { id: 3, src: '/placeholder.jpg', caption: 'LUCAS, GALERIE' },
-];
+];*/
 
 const handleCTAClick = () => {
   // TODO: implement CTA logic

@@ -7,6 +7,7 @@ defineProps<{
 
 const handleSocialClick = (type: 'atelier' | 'personal') => {
   // TODO: Implement social links
+  console.log(type);
   void 0;
 };
 </script>

@@ -30,9 +30,9 @@ jobs:
       
       - name: Build project
         run: pnpm build
-        env:
-          BASE_URL: /atelier-culs-nus/ # Remplacez par le nom de votre dépôt
-      
+        env: 
+          BASE_URL: /atelier-culs-nus/
+          
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
