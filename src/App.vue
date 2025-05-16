@@ -7,7 +7,8 @@ import Prestations from './components/Prestations.vue';
 import APropos from './components/APropos.vue';
 import InfosPratiques from './components/InfosPratiques.vue';
 import Footer from './components/Footer.vue';
-import GoToTop from './components/GoToTop.vue';
+import GoToTop from './components/GoToTop.vue'
+import ImageCarousel from './components/ImageCarousel.vue';
 
 // For smooth scrolling functionality
 const scrollToSection = (id: string) => {
@@ -38,8 +39,9 @@ onMounted(() => {
     <main>
       <Hero id="hero" />
       <Approche id="approche" />
-      <Prestations id="prestations" />
       <APropos id="a-propos" />
+      <ImageCarousel />
+      <Prestations id="prestations" />
       <InfosPratiques id="infos-pratiques" />
     </main>
     <Footer />

@@ -19,7 +19,7 @@ const handleSocialClick = (type: 'atelier' | 'personal') => {
       
       <div class="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
         <div class="w-full aspect-square mb-8 flex items-center justify-center">
-            <img src="/src/assets/images/prestations.svg" alt="Prestations entreprises" />
+            <img src="../assets/images/prestations.svg" alt="Prestations entreprises" />
           </div>
         
         <div>

@@ -40,7 +40,7 @@ const handleCTAClick = () => {
         
         <div class="order-1 md:order-2">
           <div class="w-full aspect-square mb-8 flex items-center justify-center">
-            <img src="/src/assets/images/prestations.svg" alt="Prestations entreprises" />
+            <img src="../assets/images/prestations.svg" alt="Prestations entreprises" />
           </div>
           
           <ul class="space-y-6">
@@ -68,7 +68,7 @@ const handleCTAClick = () => {
       <div class="grid md:grid-cols-2 gap-16">
         <div>
           <div class="w-full aspect-square mb-8 flex items-center justify-center">
-            <img src="/src/assets/images/prestations.svg" alt="Prestations particuliers" />
+            <img src="../assets/images/prestations.svg" alt="Prestations particuliers" />
           </div>
           
           <ul class="space-y-6">

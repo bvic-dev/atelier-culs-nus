@@ -20,7 +20,7 @@ const handleCTAClick = () => {
         <!-- HORS-CADRE -->
         <div class="flex flex-col gap-8">
           <div class="w-full aspect-square mb-4 flex items-center justify-center">
-            <img src="/src/assets/images/approche-1.svg" alt="Hors-cadre" class="w-1/2" />
+            <img src="../assets/images/approche-1.svg" alt="Hors-cadre" class="w-1/2" />
           </div>
           <div>
             <div class="flex">
@@ -46,7 +46,7 @@ const handleCTAClick = () => {
         <!-- ARTISTIQUE -->
         <div class="flex flex-col gap-8">
           <div class="w-full aspect-square mb-4 flex items-center justify-center">
-            <img src="/src/assets/images/approche-2.svg" alt="Artistique" class="w-1/2" />
+            <img src="../assets/images/approche-2.svg" alt="Artistique" class="w-1/2" />
           </div>
           <div>
             <div class="flex">
@@ -73,7 +73,7 @@ const handleCTAClick = () => {
         <!-- CONVIVIAL -->
         <div class="flex flex-col gap-8">
           <div class="w-full aspect-square mb-4 flex items-center justify-center">
-            <img src="/src/assets/images/approche-3.svg" alt="Convivial" class="w-1/2" />
+            <img src="../assets/images/approche-3.svg" alt="Convivial" class="w-1/2" />
           </div>
           <div>
             <div class="flex">

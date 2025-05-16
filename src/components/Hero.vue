@@ -1,16 +1,25 @@
 <script setup lang="ts">
 import Button from './ui/Button.vue';
+import Carousel from './ui/Carousel.vue';
+import carouselImages from '../assets/images/carousel/carousel-1.png';
 
 defineProps<{
   id: string;
 }>();
 
-// This will be replaced with actual images later
-/*const images = [
-  { id: 1, src: '/placeholder.jpg', caption: 'HÉLOISE, LIEU UNIQUE' },
-  { id: 2, src: '/placeholder.jpg', caption: 'EMMA, STUDIO' },
-  { id: 3, src: '/placeholder.jpg', caption: 'LUCAS, GALERIE' },
-];*/
+const images = [
+  { id: 1, src: carouselImages, caption: 'HÉLOISE, LIEU UNIQUE', width: 279, height: 400 },
+  { id: 2, src: carouselImages, caption: 'EMMA, STUDIO', width: 220, height: 300 },
+  // Duplicate the images to have 10 items
+  { id: 3, src: carouselImages, caption: 'LUCAS, GALERIE', width: 279, height: 400 },
+  { id: 4, src: carouselImages, caption: 'MARIE, ATELIER', width: 220, height: 300 },
+  { id: 5, src: carouselImages, caption: 'THOMAS, STUDIO', width: 279, height: 400 },
+  { id: 6, src: carouselImages, caption: 'JULIE, LIEU UNIQUE', width: 220, height: 300 },
+  { id: 7, src: carouselImages, caption: 'PAUL, GALERIE', width: 279, height: 400 },
+  { id: 8, src: carouselImages, caption: 'SARAH, ATELIER', width: 220, height: 300 },
+  { id: 9, src: carouselImages, caption: 'ALEX, STUDIO', width: 279, height: 400 },
+  { id: 10, src: carouselImages, caption: 'CLAIRE, LIEU UNIQUE', width: 220, height: 300 },
+];
 
 const handleCTAClick = () => {
   // TODO: implement CTA logic
@@ -45,7 +54,15 @@ const handleCTAClick = () => {
         </div>
       </div>
       
-      <div class="max-w-3xl mx-auto mt-24 text-center">
+      <div class="max-w-6xl mx-auto my-24">
+        <Carousel 
+          :images="images"
+          auto-scroll-direction="right"
+          :auto-scroll-speed="30"
+        />
+      </div>
+      
+      <div class="max-w-3xl mx-auto text-center">
         <blockquote class="font-outreque-bold text-2xl md:text-3xl lg:text-4xl leading-tight">
           " L'essence d'un être humain n'a rien à voir avec l'anatomie.<br>
           C'est une affaire d'intuition. D'instinct.<br>

@@ -43,8 +43,3 @@ pnpm preview
 - `/src/components` - Vue components
 - `/src/assets` - Static assets like images
 - `/src/style.css` - Global CSS styles
-
-## TODOs
-- Missing accordion copy sections need to be added
-- Business-logic wiring of all CTAs needs to be implemented
-- Images need to be imported from Figma via MCP

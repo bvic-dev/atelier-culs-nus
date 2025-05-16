@@ -14,7 +14,7 @@ onMounted(() => {
   <header :class="['fixed w-full top-0 z-50 transition-all duration-300', isScrolled ? 'bg-white bg-opacity-95 shadow-md py-2' : 'py-4']">
     <div class="container mx-auto px-6 flex justify-between items-center">
       <div class="logo">
-        <img src="/src/assets/images/logo.svg" alt="Atelier Culs Nus" class="h-12" />
+        <img src="../assets/images/logo.svg" alt="Atelier Culs Nus" class="h-12" />
       </div>
       
       <nav class="flex space-x-6">

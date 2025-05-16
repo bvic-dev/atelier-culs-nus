@@ -5,27 +5,27 @@
 
 @font-face {
   font-family: 'New Title';
-  src: url("/src/assets/fonts/NewTitle-Medium.ttf") format('truetype');
+  src: url("../src/assets/fonts/NewTitle-Medium.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Outreque';
-  src: url("/src/assets/fonts/OutrequeRegular.ttf") format('truetype');
+  src: url("../src/assets/fonts/OutrequeRegular.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Outreque Medium';
-  src: url("/src/assets/fonts/OutrequeRegular.ttf") format('truetype');
+  src: url("../src/assets/fonts/OutrequeRegular.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Outreque Bold';
-  src: url("/src/assets/fonts/OutrequeBold.ttf") format('truetype');
+  src: url("../src/assets/fonts/OutrequeBold.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Outreque Black';
-  src: url("/src/assets/fonts/OutrequeBlack.ttf") format('truetype');
+  src: url("../src/assets/fonts/OutrequeBlack.ttf") format('truetype');
 }
 
 

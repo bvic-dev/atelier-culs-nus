@@ -1,41 +1,30 @@
 name: Deploy to GitHub Pages
 
-on:
-  push:
-    branches:
-      - main # ou master, selon votre branche principale
+on: push
 
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Build and deploy site
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout code
         uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+
+      - name: 🛠️ Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'pnpm'
-      
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-          run_install: false
-      
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      
-      - name: Build project
-        run: pnpm build
-        env: 
-          BASE_URL: /atelier-culs-nus/
+          node-version: 20
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🏗️ Build site
+        run: npm run build
           
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # dossier de sortie de votre build
+          folder: dist/ # dossier de sortie de votre build
           branch: gh-pages # branche où les fichiers seront déployés
           clean: true # nettoie les anciennes versions 
