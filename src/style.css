@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,600;1,600&display=swap');
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'New Title';
+  src: url("/src/assets/fonts/NewTitle-Medium.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Outreque';
+  src: url("/src/assets/fonts/OutrequeRegular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Outreque Medium';
+  src: url("/src/assets/fonts/OutrequeRegular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Outreque Bold';
+  src: url("/src/assets/fonts/OutrequeBold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Outreque Black';
+  src: url("/src/assets/fonts/OutrequeBlack.ttf") format('truetype');
+}
+
+
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #FFFFFF;
+  --font-title: "New Title", "serif"; 
+  --font-outreque: "Outreque", "serif";
+  --font-outreque-medium: "Outreque Medium", "serif";
+  --font-outreque-bold: "Outreque Bold", "serif";
+  --font-outreque-black: "Outreque Black", "serif";
+  --font-hanken: "Hanken Grotesk", "sans-serif";
+  --border-radius: "50px";
+}
